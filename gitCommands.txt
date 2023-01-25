@@ -52,5 +52,11 @@ git diff --staged	// it shows nothing if (Staging area = last commit)
 --- commit without adding to staging area ---
 git commit -a -m "any message"
 
---- showing/list all files ---
+--- showing/listing all files ---
 ls		// feature of unix
+
+--- to remove file from (git repo)staging area in other words it becomes untracked file ---
+git rm --cached <filename>		// NOTE: but it present in filesystem
+
+--- to delete file from git repo and filesystem ---
+git rm <filename>
