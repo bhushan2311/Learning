@@ -30,9 +30,11 @@ touch [filename]
 ---- commit your staged content as a new commit snapshot ----
 git commit -m "[descreptive message]" 
 
+// NOTE: you cant commit if you dont add a file in staging area(git add <filename>)
+
 ---- move to last commit (undo likewise) ----
 // after making changes in x, you dont want that changes in x and want your previous x as it is then use checkout 
-git checkout [filename]
+git checkout <filename>	OR git restore <filename>
 git checkout -f	  // for all files
 
 Note: Once you commit new changes it won't move to last commit(won't undo)
@@ -41,5 +43,14 @@ Note: Once you commit new changes it won't move to last commit(won't undo)
 git log
 git log -p -3		// -3 means show all previous 3 commits
 
+--- Compares working directory to the staging area ---
+git diff		// it shows nothing if (working directory = Staging area)
 
+--- Compares staging area with last commit ---
+git diff --staged	// it shows nothing if (Staging area = last commit)
 
+--- commit without adding to staging area ---
+git commit -a -m "any message"
+
+--- showing/list all files ---
+ls		// feature of unix
