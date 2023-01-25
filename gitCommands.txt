@@ -1,0 +1,45 @@
+************* gitbash *************
+---- to check who made changes your intro is required ----
+**SETUP**
+
+git config --global user.name <enter_name>
+git config --global user.email <enter_email>
+
+---- to check your name email ----
+
+git config --global user.name 
+git config --global user.email 
+
+---- to open ide (vscode)----
+code .
+
+---- initialize existing directory as git repository --
+git init
+
+---- show modified files in working directory, staged for your next commit ----
+git status 	
+
+---- add a file as it looks now to your next commit(stage) ----
+git add [file]	
+
+git add -A	// to add all files in staging area
+
+---- create new file in vs code current location ----
+touch [filename]
+
+---- commit your staged content as a new commit snapshot ----
+git commit -m "[descreptive message]" 
+
+---- move to last commit (undo likewise) ----
+// after making changes in x, you dont want that changes in x and want your previous x as it is then use checkout 
+git checkout [filename]
+git checkout -f	  // for all files
+
+Note: Once you commit new changes it won't move to last commit(won't undo)
+
+--- show all commits in the current branch's history ---
+git log
+git log -p -3		// -3 means show all previous 3 commits
+
+
+
