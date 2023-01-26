@@ -39,24 +39,38 @@ git checkout -f	  // for all files
 
 Note: Once you commit new changes it won't move to last commit(won't undo)
 
---- show all commits in the current branch's history ---
+---------- show all commits in the current branch's history ----------
 git log
 git log -p -3		// -3 means show all previous 3 commits
 
---- Compares working directory to the staging area ---
-git diff		// it shows nothing if (working directory = Staging area)
+---------- Compares working directory(tree) to the staging area ----------
+git diff		// it shows nothing if (working directory(tree) = Staging area)
 
---- Compares staging area with last commit ---
+---------- Compares staging area with last commit ----------
 git diff --staged	// it shows nothing if (Staging area = last commit)
 
---- commit without adding to staging area ---
+---------- commit without adding to staging area ----------
 git commit -a -m "any message"
 
---- showing/listing all files ---
+---------- showing/listing all files ----------
 ls		// feature of unix
 
---- to remove file from (git repo)staging area in other words it becomes untracked file ---
+---------- to remove file from (git repo)staging area in other words it becomes untracked file ----------
 git rm --cached <filename>		// NOTE: but it present in filesystem
 
---- to delete file from git repo and filesystem ---
+---------- to delete file from git repo and filesystem ----------
 git rm <filename>
+
+// Note: if file getting not delete by above command and getting error: 
+	the following file has changes staged in the index:
+        waste.html
+(use --cached to keep the file, or -f to force removal)  then use below command
+git rm -f <filename>
+
+---------- Short status -> git status -s ---------------	// 35:35 harry video
+col 1: modified in staging area	(green M)
+col 2: modified in working tree (Red M)
+
+
+-------------------------- gitignore ----------------------
+Track only imp(relevent) file and ignore irrelevant files
