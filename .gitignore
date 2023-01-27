@@ -1,1 +1,12 @@
+
+# ignore mylogs everywhere
 mylogs.log
+
+# ignore that mylogs where .gitignore file is present (same folder). NOTE: it will not ignore mylogs inside another folder
+# /mylogs.log
+
+# ignores all .cpp extension files because of *
+*.cpp
+
+# ignores ignore folder because of /
+ignore/  

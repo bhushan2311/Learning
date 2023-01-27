@@ -72,5 +72,16 @@ col 1: modified in staging area	(green M)
 col 2: modified in working tree (Red M)
 
 
--------------------------- gitignore ----------------------
-Track only imp(relevent) file and ignore irrelevant files
+-------------------------- .gitignore ----------------------
+//Track only imp(relevent) file and ignore irrelevant files
+
+# files inside .gitignore won't be track
+suppose file inside .gitignore is 'mylogs.log' then 'mylogs' file will get ignore even if it presents inside some another folder
+
+# *.cpp -> adding * means it will ignore all .cpp files
+
+# <folder_name>/ -> to ignore the whole folder just add / after folder name inside .gitignore file 
+
+# /<file_name> -> # ignore that mylogs where .gitignore file is present (same folder)
+# suppose mylogs.log and .gitignore is in same folder then by adding '/' before filename, then file will get ignore
+# NOTE: it will not ignore mylogs inside another folder.
