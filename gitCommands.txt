@@ -121,3 +121,9 @@ git push -u origin <branch_name>     // <branch_name> is the name of the branch 
 NOTE: all branches wont get add in remote repo, you need to add each of them manually/explicitly
 
 highly recommendation by harry at 10:51 YT video---> Pushing Git Branches To Remote Repositories | Git Tutorials #19 
+
+git branch -d <branch_name>    // to delete branch in local repo
+NOTE: the branch will not delete if it is not merge with main branch. If sure want to delete without merge then use following command
+git branch -D <branch_name>
+
+git push -d origin <branch_name> // to delete branch in remote repo
