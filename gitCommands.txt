@@ -106,3 +106,18 @@ git merge <modified_branch_name>	// the branch you have modified get merge into 
 NOTE:- The branches must be commited to perform merge. (Doubt)
 
 git checkout -b <branch_name>  // creates new branch and switch to that branch simultaneously
+
+
+------------------ Pushing local git branches to remote repositories -----------------------
+
+- To begin with, first create remote repository on github
+
+git remote add origin https://github.com/bhushan2311/Learning.git
+
+git remote -v	            // tell from where we are pulling and pushing
+
+git push -u origin <branch_name>     // <branch_name> is the name of the branch you want to push into your remote repo
+
+NOTE: all branches wont get add in remote repo, you need to add each of them manually/explicitly
+
+highly recommendation by harry at 10:51 YT video---> Pushing Git Branches To Remote Repositories | Git Tutorials #19 
