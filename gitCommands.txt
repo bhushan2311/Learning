@@ -100,7 +100,19 @@ NOTE:- The main branch is 'master' branch
 git branch	// shows all branches. Green color shows on which branch you are on
 git branch <branch_name>  //creates a new branch
 git checkout <existed_branch_name>  //switch to new branch. To check your branch run 'git status'.
-
-NOTE:- Before switching from new branch to master branch, we must commit new branch. Otherwise it will not get switch.
+NOTE:- Before switching from new branch to master branch, we must commit new branch. Otherwise it will not get switch. (Doubt)
 
 git merge <modified_branch_name>	// the branch you have modified get merge into the branch you are currently on.
+NOTE:- The branches must be commited to perform merge. (Doubt)
+
+git checkout -b <branch_name>  // creates new branch and switch to that branch simultaneously
+
+
+------------------ Pushing local git branches to remote repositories -----------------------
+
+- To begin with, first create remote repository on github
+
+git remote add origin https://github.com/bhushan2311/Learning.git
+
+get remote -v	// tell from where we are pulling and pushing
+
