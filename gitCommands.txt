@@ -85,3 +85,22 @@ suppose file inside .gitignore is 'mylogs.log' then 'mylogs' file will get ignor
 # /<file_name> -> # ignore that mylogs where .gitignore file is present (same folder)
 # suppose mylogs.log and .gitignore is in same folder then by adding '/' before filename, then file will get ignore
 # NOTE: it will not ignore mylogs inside another folder.
+
+
+--------------------- git Branches -----------------------
+
+- Git's branching functionality allows the creation of new branches in a project. 
+- These new branches can then be used to test changes to code without affecting the main project code. 
+- If the changes work, the branch can be merged back with the main branch.
+- A Git project can have more than one branch. 
+- These branches are a pointer to a snapshot of your changes.
+
+NOTE:- The main branch is 'master' branch
+
+git branch	// shows all branches. Green color shows on which branch you are on
+git branch <branch_name>  //creates a new branch
+git checkout <existed_branch_name>  //switch to new branch. To check your branch run 'git status'.
+
+NOTE:- Before switching from new branch to master branch, we must commit new branch. Otherwise it will not get switch.
+
+git merge <modified_branch_name>	// the branch you have modified get merge into the branch you are currently on.
